@@ -1,1 +1,1 @@
-repository with completed test assignments from different companies
+https://github.com/avito-tech/frontend-trainee-assignment-2024
