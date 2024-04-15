@@ -1,0 +1,1 @@
+repository with completed test assignments from different companies
