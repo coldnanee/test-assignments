@@ -4,7 +4,7 @@ import axios, { AxiosError } from "axios";
 
 config({ path: "./.env" });
 
-const { PORT, API_KEY } = process.env;
+const { API_PORT, API_KEY } = process.env;
 
 const app = express();
 
@@ -34,6 +34,6 @@ app.use((req, res, next) => {
 		});
 });
 
-app.listen(PORT, () => {
-	console.log(`Server is starting on port ${PORT}`);
+app.listen(API_PORT, () => {
+	console.log(`Server is starting on port ${API_PORT}`);
 });
