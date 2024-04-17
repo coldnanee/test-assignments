@@ -2,13 +2,14 @@ import { Outlet, createRootRoute } from "@tanstack/react-router";
 
 import { NotFoundPage } from "@/pages/not-found";
 
-import { Header } from "@/widgets/header";
+import { Layout } from "@/layout";
 
 export const Route = createRootRoute({
 	component: () => (
 		<>
-			<Header />
-			<Outlet />
+			<Layout>
+				<Outlet />
+			</Layout>
 		</>
 	),
 	notFoundComponent: () => <NotFoundPage />
