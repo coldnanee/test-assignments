@@ -1,14 +1,15 @@
 import { Outlet, createRootRoute } from "@tanstack/react-router";
 
-export const Route = createRootRoute({
-	component: () => <Outlet />,
-	notFoundComponent: () => <NotFound />
-});
+import { NotFoundPage } from "@/pages/not-found";
 
-const NotFound = () => {
-	return (
-		<div className="h-[100dvh] flex items-center justify-center text-[20px]">
-			404. Page Not Found
-		</div>
-	);
-};
+import { Header } from "@/widgets/header";
+
+export const Route = createRootRoute({
+	component: () => (
+		<>
+			<Header />
+			<Outlet />
+		</>
+	),
+	notFoundComponent: () => <NotFoundPage />
+});

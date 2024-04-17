@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		--accent-blue: #1677ff;
+	}
+}
+
+.fullScreenWithHeader {
+	height: calc(100dvh - 60px);
+}

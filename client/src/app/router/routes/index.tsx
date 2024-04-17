@@ -1,8 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import { HomePage } from "@/pages/home";
+
 export const Route = createFileRoute("/")({
 	component: () => {
-		console.log(import.meta.env.VITE_API_URL);
-		return <div>Hello /!</div>;
+		return <HomePage />;
 	}
 });
