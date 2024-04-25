@@ -3,7 +3,10 @@ import { useQuery } from "@tanstack/react-query";
 import type { TGetList } from "@/shared";
 import type { TCollection } from "../types";
 
-export const getCollections = () => $api.get<TGetList<TCollection>>("/list");
+export const getCollections = async () => {
+	const { data } = await $api.get<TGetList<TCollection>>("/list");
+	return data;
+};
 
 export const useGetCollectionsQuery = () =>
 	useQuery({

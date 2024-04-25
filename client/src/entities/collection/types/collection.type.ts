@@ -11,4 +11,5 @@ export type TCollection = TBaseEntity & {
 	moviesCount: number;
 	cover?: TCover;
 	name: string;
+	id: string;
 };
