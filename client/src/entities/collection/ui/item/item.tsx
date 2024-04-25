@@ -1,5 +1,9 @@
 import { TCollection } from "../../types";
 
-export const CollectionItem = (props: TCollection) => {
-	return <aside></aside>;
+export const CollectionItem = ({ cover }: TCollection) => {
+	return (
+		<aside>
+			<img src={cover?.url} />
+		</aside>
+	);
 };

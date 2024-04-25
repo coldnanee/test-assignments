@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import { Collections } from "@/widgets/collection";
+import { Movies } from "@/widgets/movie";
 
 export const HomePage = () => {
 	useEffect(() => {
@@ -9,7 +9,7 @@ export const HomePage = () => {
 
 	return (
 		<>
-			<Collections />
+			<Movies />
 		</>
 	);
 };
